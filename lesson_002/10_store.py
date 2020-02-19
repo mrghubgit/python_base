@@ -57,10 +57,10 @@ table_item = store[table_code][0]
 table_item1 = store[table_code][1]
 table_quantity = table_item['quantity']
 table_quantity1 = table_item1['quantity']
-table_total=table_quantity+table_quantity1
+table_total = table_quantity + table_quantity1
 table_price = table_item['price']
 table_price1 = table_item1['price']
-table_cost = (table_quantity * table_price)+(table_quantity1*table_price1)
+table_cost = (table_quantity * table_price) + (table_quantity1 * table_price1)
 print('Стол -', table_total, 'шт, стоимость', table_cost, 'руб')
 
 sofa_code = goods['Диван']
@@ -68,26 +68,25 @@ sofa_item = store[sofa_code][0]
 sofa_item1 = store[sofa_code][1]
 sofa_quantity = sofa_item['quantity']
 sofa_quantity1 = sofa_item1['quantity']
-sofa_total=sofa_quantity+sofa_quantity1
+sofa_total = sofa_quantity + sofa_quantity1
 sofa_price = sofa_item['price']
 sofa_price1 = sofa_item1['price']
-sofa_cost = (sofa_quantity * sofa_price)+(sofa_quantity1*sofa_price1)
+sofa_cost = (sofa_quantity * sofa_price) + (sofa_quantity1 * sofa_price1)
 print('Диван -', sofa_total, 'шт, стоимость', sofa_cost, 'руб')
 
 chair_code = goods['Стул']
 chair_item = store[chair_code][0]
-chair_item1=store[chair_code][1]
-chair_item2=store[chair_code][2]
+chair_item1 = store[chair_code][1]
+chair_item2 = store[chair_code][2]
 chair_quantity = chair_item['quantity']
 chair_quantity1 = chair_item1['quantity']
 chair_quantity2 = chair_item2['quantity']
-chair_total=chair_quantity1+chair_quantity+chair_quantity2
+chair_total = chair_quantity1 + chair_quantity + chair_quantity2
 chair_price = chair_item['price']
-chair_price1=chair_item1['price']
-chair_price2=chair_item2['price']
-chair_cost = (chair_quantity*chair_price)+(chair_quantity1*chair_price1)+(chair_quantity2*chair_price2)
+chair_price1 = chair_item1['price']
+chair_price2 = chair_item2['price']
+chair_cost = (chair_quantity * chair_price) + (chair_quantity1 * chair_price1) + (chair_quantity2 * chair_price2)
 print('Стул -', chair_total, 'шт, стоимость', chair_cost, 'руб')
-
 
 ##########################################################################################
 # ВНИМАНИЕ! После того как __ВСЯ__ домашняя работа сделана и запушена на сервер,         #
@@ -95,9 +94,4 @@ print('Стул -', chair_total, 'шт, стоимость', chair_cost, 'руб
 # и оформить попытку сдачи ДЗ! Без этого ДЗ не будет проверяться!                        #
 # Как оформить попытку сдачи смотрите видео - https://youtu.be/qVpN0L-C3LU               #
 ##########################################################################################
-
-
-
-
-
-
+#зачет!

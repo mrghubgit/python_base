@@ -22,15 +22,16 @@ violator_songs_list = [
 #   Три песни звучат ХХХ.XX минут
 # Обратите внимание, что делать много вычислений внутри print() - плохой стиль.
 # Лучше заранее вычислить необходимое, а затем в print(xxx, yyy, zzz)
-
-Halo=violator_songs_list[3]
-H=Halo[1]
-Enjoy=violator_songs_list[5]
-E=Enjoy[1]
-Clean=violator_songs_list[8]
-C=Clean[1]
-total=H+E+C
-s=round(total, 2)
+# TODO Получение срезов в два действия - очень сложно, попробуйте получать нужный элемент за одно действие
+# TODO Пример: элемент = список[3][1]
+Halo = violator_songs_list[3]
+H = Halo[1]
+Enjoy = violator_songs_list[5]
+E = Enjoy[1]
+Clean = violator_songs_list[8]
+C = Clean[1]
+total = H + E + C
+s = round(total, 2)
 print('Три песни звучат', s, 'минут')
 
 # Есть словарь песен группы Depeche Mode
@@ -49,9 +50,9 @@ violator_songs_dict = {
 # распечатайте общее время звучания трех песен: 'Sweetest Perfection', 'Policy of Truth' и 'Blue Dress'
 #   А другие три песни звучат ХХХ минут
 
-one_singl=violator_songs_dict ['Sweetest Perfection']
-two_singl=violator_songs_dict ['Policy of Truth']
-three_singl=violator_songs_dict ['Blue Dress']
-total_time=one_singl+two_singl+three_singl
-time=round(total_time, 2)
+one_singl = violator_songs_dict['Sweetest Perfection']
+two_singl = violator_songs_dict['Policy of Truth']
+three_singl = violator_songs_dict['Blue Dress']
+total_time = one_singl + two_singl + three_singl
+time = round(total_time, 2)
 print('А другие три песни звучат', time, 'минут')
