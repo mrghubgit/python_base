@@ -22,17 +22,15 @@ violator_songs_list = [
 #   Три песни звучат ХХХ.XX минут
 # Обратите внимание, что делать много вычислений внутри print() - плохой стиль.
 # Лучше заранее вычислить необходимое, а затем в print(xxx, yyy, zzz)
-# TODO Получение срезов в два действия - очень сложно, попробуйте получать нужный элемент за одно действие
-# TODO Пример: элемент = список[3][1]
-Halo = violator_songs_list[3]
-H = Halo[1]
-Enjoy = violator_songs_list[5]
-E = Enjoy[1]
-Clean = violator_songs_list[8]
-C = Clean[1]
+
+H = violator_songs_list[3][1]
+E = violator_songs_list[5][1]
+C = violator_songs_list[8][1]
 total = H + E + C
 s = round(total, 2)
 print('Три песни звучат', s, 'минут')
+#TODO Исправил, сейчас смотрю на ошибки, они очевидны
+#TODO Очевидны только после выполнения всех задач)))
 
 # Есть словарь песен группы Depeche Mode
 violator_songs_dict = {
