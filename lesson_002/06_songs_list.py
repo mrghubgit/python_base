@@ -29,8 +29,6 @@ C = violator_songs_list[8][1]
 total = H + E + C
 s = round(total, 2)
 print('Три песни звучат', s, 'минут')
-#TODO Исправил, сейчас смотрю на ошибки, они очевидны
-#TODO Очевидны только после выполнения всех задач)))
 
 # Есть словарь песен группы Depeche Mode
 violator_songs_dict = {
@@ -54,3 +52,5 @@ three_singl = violator_songs_dict['Blue Dress']
 total_time = one_singl + two_singl + three_singl
 time = round(total_time, 2)
 print('А другие три песни звучат', time, 'минут')
+
+#зачет!
