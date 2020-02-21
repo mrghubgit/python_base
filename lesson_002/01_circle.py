@@ -40,3 +40,5 @@ print(a <= radius)
 # 77777.7777
 # False
 # False
+
+#зачет!
