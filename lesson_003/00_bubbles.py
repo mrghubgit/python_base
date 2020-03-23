@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import random
 from random import choice
 
 import simple_draw as sd
@@ -21,19 +22,24 @@ def bubble(point, step, color_bubble):
         sd.circle(center_position=point, radius=radius_bubble, width=2, color=color_bubble)
 
 
-bubble(point=sd.get_point(300, 300), radius_bubble=50, color_bubble=sd.random_color())
-#TODO Вот здесь даёт ошибку, получается что, мы указываем точку то есть point, после указываем
-#TODO радиус то есть radius_bubble, и цвет который будет выдаваться рандомно?
-
+bubble(point=sd.get_point(300, 300), step=5, color_bubble=sd.random_color())
 
 # Нарисовать 10 пузырьков в ряд
-# TODO здесь ваш код
+for x in range(100, 1001, 100):
+    point_bubble = sd.get_point(x, 100)
+    bubble(point=point_bubble, step=15, color_bubble=sd.COLOR_RED)
 
 # Нарисовать три ряда по 10 пузырьков
-# TODO здесь ваш код
+for y in range(100, 301, 100):
+    for x in range(100, 1001, 100):
+        point_bubble = sd.get_point(x, y)
+        bubble(point=point_bubble, step=5, color_bubble=sd.COLOR_WHITE)
 
 # Нарисовать 100 пузырьков в произвольных местах экрана случайными цветами
-# TODO здесь ваш код
+for _ in range(100):
+    point_bubble = sd.random_point()
+    step = random
+    bubble(point=point_bubble, step= 10, color_bubble=sd.random_color())
 
 sd.pause()
 
