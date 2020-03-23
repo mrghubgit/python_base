@@ -14,6 +14,7 @@ for _ in range(3):
     radius_bubble += 5
     sd.circle(center_position=point, radius=radius_bubble, width=2)
 
+# TODO Нужно подправить стиль кода - используйте Code/Refromat Code
 # Написать функцию рисования пузырька, принммающую 3 (или более) параметра: точка рисования, шаг и цвет
 def bubble(point, step, color_bubble):
     radius_bubble = 50
